@@ -1,0 +1,77 @@
+﻿td {
+    padding: 3px 10px;
+}
+
+#delete_user {
+    font-size: 10pt;
+    padding: 5px 15px;
+}
+
+.edit-form {
+    width: 500px;
+}
+
+#label_male, #label_female {
+    cursor: pointer;
+}
+
+#label_male:active, #label_female:active {
+    cursor: default;
+}
+
+#div_delete_user {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-align: left;
+}
+
+#delete_user {
+    font-size: 10pt;
+    padding: 5px 15px;
+}
+
+#row_0 {
+    width: 100%;
+}
+
+#change_password {
+    font-size: 10pt;
+    margin-bottom: 30px;
+}
+
+#span_male, #span_female {
+    float: left;
+    text-align: center;
+    padding-bottom: 25px;
+    width: 50%;
+}
+
+#edit {
+    padding: 10px 35px;
+    margin-right: 20px;
+}
+
+#cancel {
+    padding: 10px 35px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 786px) {
+    .edit-form {
+        width: 400px;
+    }
+
+    input {
+        font-size: 16pt;
+    }
+
+    #delete_user {
+        font-size: 12pt;
+    }
+
+    #change_password {
+        font-size: 10pt;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,61 @@
+﻿.input-text, 
+.input-password, 
+.input-date, 
+.input-email {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.5px solid #4d5569;
+    color: #4d5569;
+    z-index: 0;
+    outline: none;
+    cursor: text;
+    transition: font-weight 0.2s;
+}
+
+.input-radio {
+	display: none;
+}
+
+.input-text:hover ~ .placeholder, 
+.input-password:hover ~ .placeholder, 
+.input-date:hover,
+.input-email:hover ~ .placeholder {
+	font-weight: 700;
+}
+
+.placeholder {
+	position: relative;
+    cursor: text;
+    width: 100%;
+    font-weight: lighter;
+    z-index: 1;
+    transform: scale(1.0) translate(0,-120%);
+    color: #4d5569;
+    transition: all 0.3s;
+}
+
+.placeholder_up {
+	position: relative;
+    cursor: text;
+    width: 100%;
+    font-weight: lighter;
+    z-index: 1;
+    transform: scale(0.8) translate(-12%, -270%);
+    color: #4d5569;
+    transition: all 0.3s;
+}
+
+.placeholder::selection, .placeholder_up::selection {
+	background-color: transparent;
+}
+
+.input-text:valid ~ .placeholder, 
+.input-password:valid ~ .placeholder, 
+.input-email:valid ~ .placeholder, 
+.input-text:focus ~ .placeholder, 
+.input-password:focus ~ .placeholder, 
+.input-email:focus ~ .placeholder {
+    transform: scale(0.8) translate(-12%, -270%);
+    color: #788398;
+}
