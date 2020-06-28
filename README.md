@@ -1,4 +1,4 @@
-# Intelligent Music Selection System based on Matrix Factorization (Client)
+# Intelligent Music Selection System (Client)
 
 ## Dependencies
 
